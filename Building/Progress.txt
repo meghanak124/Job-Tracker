@@ -1,0 +1,34 @@
+DAY1
+
+what i did today is
+installed node.js , mongodb , mongosh and postman
+created file structure for backend
+with npm init --y , packages.json is created
+with nodemon , packages-lock.json is created
+created server.js - main entry
+created config/db.js - mongodb connection - set env variables
+created models/Job.js - set the attributes
+created routes/jobRoutes.js - API endpoints to get post put and delete jobs
+created controllers/jobController.js
+then run the dev and check if the db is connected
+when it is connected , used postman to get and post
+
+Setup: I've installed all the necessary tools and software, including Node.js, MongoDB, mongosh, and Postman.
+
+Project Initialization: I successfully set up the backend file structure, created the package.json file, and installed the required dependencies.
+
+Database Integration: I configured the MongoDB connection using environment variables and confirmed a successful connection.
+
+API Structure: I've created the essential MVC-like structure with dedicated files for your models, routes, and controllers, ready for CRUD operations.
+
+API Testing: I've started testing your endpoints with Postman, which is a crucial step in verifying the backend's functionality.
+✅ What You’ve Done
+Set up backend with Node.js + Express.
+Connected MongoDB.
+Created Job schema + controllers + routes.
+Tested POST & GET (data is in DB 🎉).
+
+
+
+
+DAY2
