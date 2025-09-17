@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, AppBar, Toolbar, Typography, Box, Paper, TextField, MenuItem } from '@mui/material';
 import JobForm from './components/JobForm';
 import JobList from './components/JobList';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [refresh, setRefresh] = useState(0);
@@ -48,13 +49,14 @@ function App() {
         </Paper>
 
         <Box>
-          <JobList
-            refresh={refresh}
-            onJobUpdated={refreshJobs}
-            search={search}
-            statusFilter={statusFilter}
-          />
-        </Box>
+  <JobList
+    refresh={refresh}
+    onJobUpdated={refreshJobs}
+    search={search}
+    statusFilter={statusFilter}
+  />
+  <Dashboard refresh={refresh} />
+</Box>
       </Container>
     </>
   );
